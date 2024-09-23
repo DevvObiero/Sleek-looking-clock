@@ -152,4 +152,14 @@ row-gap: 3.5rem;
     top: 50%;
     left:.75rem;
 }
+
+.clock__rounder{
+   width: .75rem;
+   height: .75rem;
+   background-color: var(--first-color);
+   border-radius: 50%;
+   border:2px solid var(--body-color);
+   z-index: var(--z-tooltip);
+}
+
 /* media queries for large devices */
