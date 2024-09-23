@@ -83,7 +83,73 @@ a{
 
 
 /* clock */
+.clock__container{
+    height:100vh;
+    grid-template-rows: 1fr max-content;
+}
+
+.clock__circle{
+    position: relative;
+    height: 200px;
+    width: 200px;
+    box-shadow: -6px -6px 16px var(--white-color),
+                6px 6px 16px hsla(var(--hue-color), 30%, 86%,1),
+                inset 6px 6px 16px hsla(var(--hue-color), 30%, 86%,1),
+                inset -6px -6px 16px var(--white-color);
+    border-radius: 50%;
+    justify-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;            
+
+}
+
+.clock__content{
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--biggest-font-size);
+    color: var(--white-color); */
+align-self: center;
+row-gap: 3.5rem;
+}
+
+.clock__twelve,
+.clock__three,
+.clock__six,
+.clock__nine{
+    position: absolute;
+    width: 1rem;
+    height: 1px;
+    background-color: var(--text-color-light);
+}
 
 
+.clock__twelve,
+.clock__six{
+    /* transform-origin: center bottom; */
+    transform: translateX(-50%) rotate(90deg);
+}
 
+.clock__twelve{
+    top: 1.25rem;;
+    left:50%
+}
+.clock__three{
+    top: 50%;
+    right:.75rem;
+}
+.clock__six{
+    bottom: 1.25rem;
+    left: 50%;
+}
+
+.clock__nine{
+    top: 50%;
+    left:.75rem;
+}
 /* media queries for large devices */
