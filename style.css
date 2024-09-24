@@ -252,6 +252,12 @@ justify-content: center;
     margin-left: var(--mb-0-25);
 }
 
+.clock__date{
+    text-align: center;
+    font-size: var(--small-font-size);
+    font-weight: var(--font-medium);
+}
+
 
 /* media queries for large devices */
 
