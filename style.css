@@ -12,7 +12,7 @@
 :root {
     --hue-color: 240;
 
-    --first-color: hsl(var(--hue-color),53%,49%);
+    --first-color: hsl(var(--hue-color),53%,46%);
     --title-color: hsl(var(--hue-color),53%,15%);
     --text-color: hsl(var(--hue-color),12%,35%);
     --text-color-light: hsl(var(--hue-color),12%,65%);
@@ -53,6 +53,25 @@
         --tiny-font-size:.75rem;
     }
 }
+
+
+.clock__theme{
+    position: absolute;
+    top:-1rem;
+    right: -1rem;
+    display: flex;
+    padding: .25rem;
+    border-radius: 50%;
+    box-shadow: inset -1px -1px 1px hsla(var(--hue-color), 0%, 100%, 1)
+                inset 1px 1px 1px hsla(var(--hue-color), 30%, 86%, 1);
+    color: var(--first-color);
+}
+
+
+
+
+
+
 
 
 /* BASE */

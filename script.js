@@ -48,16 +48,40 @@ const textHour = document.getElementById('text-hour'),
             ampm = 'AM'
         }
 
-        if
+        if(hh == 0){
+            hh = 12;
+        }
+
+        if(hh < 10){
+            hh = `0${hh}`
+        }
 
 
 
 
 
 
+    //   shou hour and minutes
+        textHour.innerHTML = `${hh}:`
+        textMinutes.innerHTML = mm
+// add zero on single numbers
+        if(mm < 10){
+            mm = '0' + mm;
+        }
       
-        textHour.innerHTML = `${hh}`
-      }
+    textAmPm.innerHTML = ampm;
+
+    // getting the months of the uyear and showing it
+    
+    
+    let months = ['Jan','Feb','Mar','Apr','May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+    
+//  showing the date monthy and year
+    dateDay.innerHTML = day
+    dateMonth.innerHTML = `${months[month]},`
+    dateYear.innerHTML = year
+    }
+// show am or pm
 
       setInterval(clockText,1000)//1s
 
