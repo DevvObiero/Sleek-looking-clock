@@ -66,9 +66,9 @@ const textHour = document.getElementById('text-hour'),
         textMinutes.innerHTML = mm
 // add zero on single numbers
         if(mm < 10){
-            mm = '0' + mm;
+            mm = `0${mm}`;
         }
-      
+      textMinutes.innerHTML = mm ;
     textAmPm.innerHTML = ampm;
 
     // getting the months of the uyear and showing it
