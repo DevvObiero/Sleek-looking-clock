@@ -120,8 +120,15 @@ a{
 
 /* clock */
 .clock__container{
+    
     height:100vh;
     grid-template-rows: 1fr max-content;
+    /* position: absolutes;
+    justify-content:center;
+    align-items: center; */
+    /* left: 50%;
+    top: 50%; */
+    /* transform: translate(-50%,10%); */
 }
 
 .clock__circle{
@@ -254,7 +261,7 @@ justify-content: center;
 
 .clock__logo{
     width: max-content;
-    justify-self: center;
+    justify-self:center;
     margin-bottom: var(--mb-2-5);
     font-family:'Poppins', sans-serif;
     font-size: var(--smaller-font-size);
